@@ -1,0 +1,67 @@
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-container {
+    height: 100%;
+    width: 100%;
+    /* background: #c5daff; */
+}
+
+.top-content-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content-text-box {
+    width: 35rem;
+}
+
+.top-content-main-text {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.top-content-sub-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top-container {
+    animation-duration: 4s;
+    /* animation-name: slidein; */
+    animation-name: fadeIn;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.user-details-header {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+  
+.user-details-number {
+  font-size: 65px;
+  font-weight: 700;
+}
