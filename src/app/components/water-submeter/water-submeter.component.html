@@ -1,20 +1,22 @@
-<div>
+<div class="vw-100">
   <!-- header main image starts -->
   <div class="main-container">
     <div class="row top-container">
-      <div class="col-6 top-content-text">
+      <div class="col-12 col-sm-6 top-content-text">
         <div class="top-content-text-box">
-          <span class="col-12 top-content-main-text">
+          <span class="top-content-main-text">
             Discover the power of water submetering
           </span>
-          <span class="col-12 top-content-sub-text">
+          <span class="top-content-sub-text">
             Boost conservation and increase your ROI when you monitor and track
             water utility usage for tenants.
           </span>
           <!-- <button>Book Consultantion</button> -->
         </div>
       </div>
-      <div class="col-6 d-flex justify-content-center align-items-center">
+      <div
+        class="col-12 col-sm-6 d-flex justify-content-center align-items-center top-content-img-box"
+      >
         <img src="../../../assets/images/logo.png" alt="" />
       </div>
     </div>
@@ -22,35 +24,114 @@
   <!-- header main image ends -->
 
   <!-- user number details starts -->
-  <div class="container text-center">
+  <div class="container">
     <div>
       <div class="user-details-header">
-        Increase your cost recovery and your conservation
+        <h1 class="fw-bold">
+          Increase your cost recovery and your conservation
+        </h1>
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-4">
+      <div class="col-12 col-sm-4 d-flex align-items-center flex-column">
         <div class="d-flex align-items-center user-details-number">
           <div [countUp]="208" [options]="{ enableScrollSpy: true }">208</div>
           <div>M+</div>
         </div>
-        <h3 class="text-start">Gallons Conserved to Date</h3>
+        <h3 class="text-center">Gallons Conserved to Date</h3>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-sm-4 d-flex align-items-center flex-column">
         <div class="d-flex align-items-center user-details-number">
           <div [countUp]="22" [options]="{ enableScrollSpy: true }">22</div>
           <div>K+</div>
         </div>
-        <h3 class="text-start">Residents with Billing Services</h3>
+        <h3 class="text-center">Residents with Billing Services</h3>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-sm-4 d-flex align-items-center flex-column">
         <div class="d-flex align-items-center user-details-number">
           <div [countUp]="200" [options]="{ enableScrollSpy: true }">200</div>
           <div>K+</div>
         </div>
-        <h3 class="text-start">Meters Installed in USA</h3>
+        <h3 class="text-center">Meters Installed in USA</h3>
       </div>
     </div>
   </div>
   <!-- user number details ends -->
+
+  <!-- services will start here -->
+  <div class="container mt-5 benefits-container">
+    <h1>Submetering Benefits</h1>
+    <div class="row mt-5">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Share and Collaborate</h5>
+            <p class="card-text">
+              Studies show utility consumption can drop by 18%-30% within a few
+              months. Residents use less when they pay for their usage.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cut Down Utility Costs</h5>
+            <p class="card-text">
+              Stay ahead of rate increases from utility companies. Make monthly
+              rental rates more competitive in the market
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Boost Your Cash Flow</h5>
+            <p class="card-text">
+              Elevate your Net Operating Income. Enjoy ROI periods typically
+              under 12 months. We offer a free ROI analysis for every proposal!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Increase Property Value</h5>
+            <p class="card-text">
+              Rise in Net Cash Flow results in increased property values and Cap
+              Rates. Buyers prefer properties with submetering in place.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other cards -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Stabilize Rents</h5>
+            <p class="card-text">
+              Avoid regular rent hikes as utility rate increases don’t impact
+              rents.Buyers prefer properties with submetering in place
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Monthly Billing</h5>
+            <p class="card-text">
+              Let us handle individual utility charges calculation. Our service
+              can essentially be free for property owners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
