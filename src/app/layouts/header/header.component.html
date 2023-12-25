@@ -1,45 +1,58 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary vw-100 fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-4 vw-100">
   <div class="container-fluid">
-    <img
-      src="assets/logo.png"
-      class="ms-3"
-      alt="Logo"
-      width="150"
-      height="50"
-    />
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <img
+          src="assets/logo.png"
+          class="ms-3"
+          alt="Logo"
+          width="150"
+          height="50"
+        />
+      </div>
+      <div class="col-6 col-md-9 text-end">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+
     <div class="collapse navbar-collapse desktop-nav" id="navbarTogglerDemo03">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link fs-3 fs-bold" aria-current="page" href="#"
+            >About</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link fs-3 fs-bold" href="#">Submeter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link fs-3 fs-bold" href="#">Billing & Reporting</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link fs-3 fs-bold" href="#">Our Process</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link fs-3 fs-bold" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-3 fs-bold" href="#">Blog</a>
         </li>
       </ul>
-      <form class="d-flex" role="query">
+
+      <div class="d-flex align-items-center">
         <button class="btn btn-outline-dark rounded-pill mx-1">Call Us</button>
         <button class="btn btn-primary rounded-pill mx-1">Get Started</button>
-      </form>
+      </div>
     </div>
   </div>
 </nav>
