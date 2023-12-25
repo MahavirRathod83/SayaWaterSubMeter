@@ -38,13 +38,28 @@
   animation-name: fadeIn;
 }
 
-@keyframes slidein {
+.benefits-container {
+  animation-duration: 4s;
+  animation-name: benefitsslide;
+}
+
+@keyframes benefitslide {
   from {
     margin-top: 100%;
   }
 
   to {
     margin-top: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 0%;
+  }
+
+  to {
+    margin-bottom: 100%;
   }
 }
 
@@ -81,20 +96,5 @@
   .user-details-number {
     font-size: 55px;
     font-weight: 600;
-  }
-}
-
-.benefits-container {
-  animation-duration: 4s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-top: 100%;
-  }
-
-  to {
-    margin-top: 0%;
   }
 }
