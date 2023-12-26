@@ -5,6 +5,10 @@ export class routes {
   // UI urls
 
   public static get waterSubmeter(): string {
-    return this.UI_Url;
+    return this.UI_Url + 'water-submetering';
+  }
+
+  public static get aboutMeter(): string {
+    return this.UI_Url + 'about';
   }
 }
