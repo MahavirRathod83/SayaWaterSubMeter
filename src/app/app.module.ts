@@ -7,6 +7,7 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { WaterSubmeterComponent } from './components/water-submeter/water-submeter.component';
 import { CountUpModule } from 'ngx-countup';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CountUpModule } from 'ngx-countup';
     HeaderComponent,
     FooterComponent,
     WaterSubmeterComponent,
+    AboutComponent,
    
   ],
   imports: [

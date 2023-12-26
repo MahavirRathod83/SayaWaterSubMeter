@@ -1,5 +1,13 @@
-@media screen and (min-width: 991px) {
-  .desktop-nav {
-    margin-left: 250px;
+@media screen and (max-width: 991px) {
+  .nav-row {
+    width: 100%;
+  }
+  .nav-row div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav-row .nav-menu {
+    display: flex;
+    justify-content: flex-end;
   }
 }

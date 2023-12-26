@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-4 vw-100">
+<nav class="navbar navbar-expand-lg vw-100 bg-body-tertiary fixed-top p-4">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row nav-row">
       <div class="col-6 col-md-3">
         <img
           src="assets/logo.png"
@@ -10,7 +10,7 @@
           height="50"
         />
       </div>
-      <div class="col-6 col-md-9 text-end">
+      <div class="col-6 col-md-9 nav-menu">
         <button
           class="navbar-toggler"
           type="button"
@@ -28,24 +28,28 @@
     <div class="collapse navbar-collapse desktop-nav" id="navbarTogglerDemo03">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" aria-current="page" href="#"
+          <a
+            class="nav-link fw-bold"
+            aria-current="page"
+            href="#"
+            [routerLink]="['about']"
             >About</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" href="#">Submeter</a>
+          <a class="nav-link fw-bold" href="#">Submeter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" href="#">Billing & Reporting</a>
+          <a class="nav-link fw-bold" href="#">Billing & Reporting</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" href="#">Our Process</a>
+          <a class="nav-link fw-bold" href="#">Our Process</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" href="#">Store</a>
+          <a class="nav-link fw-bold" href="#">Store</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fs-3 fs-bold" href="#">Blog</a>
+          <a class="nav-link fw-bold" href="#">Blog</a>
         </li>
       </ul>
 

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { WaterSubmeterComponent } from './components/water-submeter/water-submeter.component';
+import { AboutComponent } from './components/about/about.component';
 import { routes } from './shared/routes/routes';
 
 const routing: Routes = [
@@ -11,6 +12,11 @@ const routing: Routes = [
         path: routes.waterSubmeter,
         title: 'water-submetering',
         component: WaterSubmeterComponent,
+      },
+      {
+        path: routes.aboutMeter,
+        title: 'about',
+        component: AboutComponent,
       },
     ],
   },
