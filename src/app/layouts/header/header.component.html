@@ -14,9 +14,9 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -25,7 +25,10 @@
       </div>
     </div>
 
-    <div class="collapse navbar-collapse desktop-nav" id="navbarTogglerDemo03">
+    <div
+      class="collapse navbar-collapse desktop-nav"
+      id="navbarSupportedContent"
+    >
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a
@@ -36,9 +39,28 @@
             >About</a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Submeter</a>
+        <li class="row">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <a
+                class="nav-link fw-bold"
+                role="button"
+                id="dropdownBasic1"
+                ngbDropdownToggle
+              >
+                Submeter
+              </a>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button [routerLink]="[routes.waterSubmeter]" ngbDropdownItem>
+                  Water Submeter
+                </button>
+                <button ngbDropdownItem>Gas Submetering</button>
+                <button ngbDropdownItem>Electric Submetering</button>
+              </div>
+            </div>
+          </div>
         </li>
+
         <li class="nav-item">
           <a class="nav-link fw-bold" href="#">Billing & Reporting</a>
         </li>
