@@ -114,10 +114,6 @@
 }
 
 @media (max-width: 768px) {
-  .content-flex-horizontal {
-    flex-direction: column;
-  }
-
   .content-col-image-wrapper,
   .content-wrap-50 {
     width: 100%;

@@ -1,0 +1,88 @@
+/* for header details here */
+.hero-p {
+  line-height: 1.5;
+}
+
+.section-hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.hero-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.white-text-outline-button {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.video-overlay-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-background-wrapper.about {
+  background: url("../../../assets/aboutimage.jpg") center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.section-cta {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.cta-block-black {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  border-radius: 16px;
+  padding: 5.5em;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-main-grid {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.cta-h-wrapper {
+  grid-row-gap: 1.5em;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+}
+
+.cta-div-block-black {
+  grid-column-gap: 1.25em;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}

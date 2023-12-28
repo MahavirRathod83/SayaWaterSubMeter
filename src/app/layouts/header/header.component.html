@@ -1,4 +1,6 @@
-<nav class="navbar navbar-expand-lg vw-100 bg-body-tertiary fixed-top p-4">
+<nav
+  class="navbar navbar-expand-lg vw-100 bg-body-tertiary bg-dark fixed-top p-4"
+>
   <div class="container-fluid">
     <div class="row nav-row">
       <div class="col-6 col-md-3">
@@ -54,18 +56,32 @@
                 <button [routerLink]="[routes.waterSubmeter]" ngbDropdownItem>
                   Water Submeter
                 </button>
-                <button ngbDropdownItem>Gas Submetering</button>
-                <button ngbDropdownItem>Electric Submetering</button>
+                <button [routerLink]="[routes.gasMeter]" ngbDropdownItem>
+                  Gas Submetering
+                </button>
+                <button [routerLink]="[routes.electricMeter]" ngbDropdownItem>
+                  Electric Submetering
+                </button>
               </div>
             </div>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Billing & Reporting</a>
+          <a
+            [routerLink]="[routes.billingReport]"
+            class="nav-link fw-bold"
+            href="#"
+            >Billing & Reporting</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Our Process</a>
+          <a
+            [routerLink]="[routes.ourProcess]"
+            class="nav-link fw-bold"
+            href="#"
+            >Our Process</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link fw-bold" href="#">Store</a>
