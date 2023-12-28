@@ -9,6 +9,10 @@ import { WaterSubmeterComponent } from './components/water-submeter/water-submet
 import { CountUpModule } from 'ngx-countup';
 import { AboutComponent } from './components/about/about.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { GasSubmeterComponent } from './components/gas-submeter/gas-submeter.component';
+import { ElectricSubmeterComponent } from './components/electric-submeter/electric-submeter.component';
+import { BillingReportComponent } from './components/billing-report/billing-report.component';
+import { ProcessComponent } from './components/process/process.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     WaterSubmeterComponent,
     AboutComponent,
+    GasSubmeterComponent,
+    ElectricSubmeterComponent,
+    BillingReportComponent,
+    ProcessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CountUpModule, NgbDropdownModule],
   providers: [],
