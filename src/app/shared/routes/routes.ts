@@ -27,4 +27,8 @@ export class routes {
   public static get ourProcess(): string {
     return this.UI_Url + 'our-process';
   }
+
+  public static get getStarted(): string {
+    return this.UI_Url + 'get-started';
+  }
 }
