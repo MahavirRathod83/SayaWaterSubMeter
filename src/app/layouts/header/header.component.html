@@ -4,13 +4,15 @@
   <div class="container-fluid">
     <div class="row nav-row">
       <div class="col-6 col-md-3">
-        <img
-          src="assets/logo.png"
-          class="ms-3"
-          alt="Logo"
-          width="150"
-          height="50"
-        />
+        <a [routerLink]="[routes.waterSubmeter]">
+          <img
+            src="assets/logo.png"
+            class="ms-3"
+            alt="Logo"
+            width="150"
+            height="50"
+          />
+        </a>
       </div>
       <div class="col-6 col-md-9 nav-menu">
         <button
@@ -93,7 +95,12 @@
 
       <div class="d-flex align-items-center">
         <button class="btn btn-outline-dark rounded-pill mx-1">Call Us</button>
-        <button class="btn btn-primary rounded-pill mx-1">Get Started</button>
+        <button
+          [routerLink]="[routes.getStarted]"
+          class="btn btn-primary rounded-pill mx-1"
+        >
+          Get Started
+        </button>
       </div>
     </div>
   </div>

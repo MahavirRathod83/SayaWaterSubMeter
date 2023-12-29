@@ -13,6 +13,7 @@ import { GasSubmeterComponent } from './components/gas-submeter/gas-submeter.com
 import { ElectricSubmeterComponent } from './components/electric-submeter/electric-submeter.component';
 import { BillingReportComponent } from './components/billing-report/billing-report.component';
 import { ProcessComponent } from './components/process/process.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProcessComponent } from './components/process/process.component';
     ElectricSubmeterComponent,
     BillingReportComponent,
     ProcessComponent,
+    GetStartedComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CountUpModule, NgbDropdownModule],
   providers: [],

@@ -78,6 +78,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .grid-pricing {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -157,11 +160,10 @@
 }
 
 .grid-pricing {
-  width: 100%;
   grid-column-gap: 2.2em;
   grid-row-gap: 2.2em;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   position: relative;
 }

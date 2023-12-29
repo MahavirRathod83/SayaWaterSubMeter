@@ -1,80 +1,5 @@
-/* .main-container {
-  height: 100vh;
-  width: 100vw;
-}
-
-.top-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  padding: 4rem;
-  /* background: #c5daff; */
-/* }
-
-.top-content-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.top-content-text-box {
-  width: 35rem;
-}
-
-.top-content-main-text {
-  display: block;
-  font-size: 45px;
-  font-weight: 700;
-} */
-
-/* .top-content-sub-text {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.top-container {
-  animation-duration: 4s;
-  /* animation-name: slidein; */
-/* animation-name: fadeIn;
-} */
-*/
-
-/* .benefits-container {
-  animation-duration: 4s;
-  animation-name: benefitsslide;
-}
-
-@keyframes benefitslide {
-  from {
-    margin-top: 100%;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-bottom: 0%;
-  }
-
-  to {
-    margin-bottom: 100%;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */ */
-
-
 /* for header details here */
+
 .hero-p {
   line-height: 1.5;
 }
@@ -89,7 +14,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-h1 {
@@ -142,6 +67,13 @@
     width: 100%;
     margin-bottom: 10px;
   }
+  .hero-h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .hero-p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -153,6 +85,10 @@
     font-size: 55px;
     font-weight: 600;
   }
+  .hero-h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
 }
 
 @media screen and (max-width: 398px) {
@@ -161,5 +97,12 @@
   }
   .booking-container a {
     font-size: 13px;
+  }
+  .hero-h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .hero-p {
+    font-size: 14px;
   }
 }

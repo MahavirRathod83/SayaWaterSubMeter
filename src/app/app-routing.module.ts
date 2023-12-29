@@ -7,6 +7,7 @@ import { GasSubmeterComponent } from './components/gas-submeter/gas-submeter.com
 import { ElectricSubmeterComponent } from './components/electric-submeter/electric-submeter.component';
 import { BillingReportComponent } from './components/billing-report/billing-report.component';
 import { ProcessComponent } from './components/process/process.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
 
 const routing: Routes = [
   {
@@ -41,6 +42,16 @@ const routing: Routes = [
         path: routes.ourProcess,
         title: 'our-process',
         component: ProcessComponent,
+      },
+      {
+        path: routes.getStarted,
+        title: 'get-started',
+        component: GetStartedComponent,
+      },
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: routes.waterSubmeter,
       },
     ],
   },
