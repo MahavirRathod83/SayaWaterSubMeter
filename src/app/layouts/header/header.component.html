@@ -38,6 +38,8 @@
           <a
             class="nav-link fw-bold"
             aria-current="page"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
             href="#"
             [routerLink]="['about']"
             >About</a
@@ -55,13 +57,28 @@
                 Submeter
               </a>
               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                <button [routerLink]="[routes.waterSubmeter]" ngbDropdownItem>
+                <button
+                  [routerLink]="[routes.waterSubmeter]"
+                  ngbDropdownItem
+                  data-bs-target="#navbarSupportedContent"
+                  data-bs-toggle="collapse"
+                >
                   Water Submeter
                 </button>
-                <button [routerLink]="[routes.gasMeter]" ngbDropdownItem>
+                <button
+                  [routerLink]="[routes.gasMeter]"
+                  ngbDropdownItem
+                  data-bs-target="#navbarSupportedContent"
+                  data-bs-toggle="collapse"
+                >
                   Gas Submetering
                 </button>
-                <button [routerLink]="[routes.electricMeter]" ngbDropdownItem>
+                <button
+                  [routerLink]="[routes.electricMeter]"
+                  ngbDropdownItem
+                  data-bs-target="#navbarSupportedContent"
+                  data-bs-toggle="collapse"
+                >
                   Electric Submetering
                 </button>
               </div>
@@ -74,6 +91,8 @@
             [routerLink]="[routes.billingReport]"
             class="nav-link fw-bold"
             href="#"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
             >Billing & Reporting</a
           >
         </li>
@@ -82,22 +101,44 @@
             [routerLink]="[routes.ourProcess]"
             class="nav-link fw-bold"
             href="#"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
             >Our Process</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Store</a>
+          <a
+            class="nav-link fw-bold"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            href="#"
+            >Store</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-bold" href="#">Blog</a>
+          <a
+            class="nav-link fw-bold"
+            href="#"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            >Blog</a
+          >
         </li>
       </ul>
 
       <div class="d-flex align-items-center">
-        <button class="btn btn-outline-dark rounded-pill mx-1">Call Us</button>
+        <button
+          class="btn btn-outline-dark rounded-pill mx-1"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+        >
+          Call Us
+        </button>
         <button
           [routerLink]="[routes.getStarted]"
           class="btn btn-primary rounded-pill mx-1"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
         >
           Get Started
         </button>
