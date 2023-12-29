@@ -11,3 +11,12 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    justify-content: center;
+  }
+  .nav-btn button {
+    width: 50%;
+  }
+}
