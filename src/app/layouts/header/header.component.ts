@@ -20,6 +20,8 @@ export class HeaderComponent {
     const billingLink = this.el.nativeElement.querySelector(
       '#billingLinkElement'
     );
+    const getStartedLink =
+      this.el.nativeElement.querySelector('#getLinkElement');
     if (isMobile) {
       this.renderer.setAttribute(
         storeLink,
@@ -51,6 +53,12 @@ export class HeaderComponent {
         '#navbarSupportedContent'
       );
       this.renderer.setAttribute(billingLink, 'data-bs-toggle', 'collapse');
+      this.renderer.setAttribute(
+        getStartedLink,
+        'data-bs-target',
+        '#navbarSupportedContent'
+      );
+      this.renderer.setAttribute(getStartedLink, 'data-bs-toggle', 'collapse');
     }
   }
 }
