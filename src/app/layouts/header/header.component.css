@@ -10,6 +10,9 @@
     display: flex;
     justify-content: flex-end;
   }
+  .nav-btn button {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -17,6 +20,6 @@
     justify-content: center;
   }
   .nav-btn button {
-    width: 50%;
+    width: 100%;
   }
 }
