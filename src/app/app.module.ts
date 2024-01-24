@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +29,13 @@ import { GetStartedComponent } from './components/get-started/get-started.compon
     ProcessComponent,
     GetStartedComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CountUpModule, NgbDropdownModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CountUpModule,
+    NgbDropdownModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

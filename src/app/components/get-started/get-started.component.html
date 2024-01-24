@@ -4,59 +4,111 @@
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
         <h1 class="display-4 fw-bold lh-1 mb-3">
-          Let’s make submetering so simple, it’s fun
+          Expand your network, Share ideas & Grow with us
         </h1>
-        <p class="col-lg-10 fs-4">
-          Boost conservation and increase your ROI when you monitor and track
-          detailed water utility usage for tenants.
-        </p>
+        <p class="col-lg-10 fs-4">Earn Commission on Project Sale</p>
+        <p class="col-lg-10 fs-4">Get Marketing, Sales & Technical Support</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 shadow">
-          <div class="form-floating mb-3">
-            <label for="floatingInput">FirstName</label>
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-              required
-            />
+        <form
+          class="p-4 p-md-5 border rounded-3 shadow"
+          (ngSubmit)="onSubmit(registerForm)"
+          #registerForm="ngForm"
+        >
+          <div
+            class="form-floating mb-3"
+            [ngClass]="{
+              'has-error': !first_name.valid && isSubmitted == true
+            }"
+          >
+            <div class="mb-2">
+              <label for="firstname"
+                >FirstName<span class="requiredField">*</span></label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                required
+                id="first_name"
+                required
+                minlength="2"
+                autocomplete="off"
+                [(ngModel)]="FirstName"
+                name="first_name"
+                #first_name="ngModel"
+              />
+            </div>
+            <span *ngIf="!first_name.valid && isSubmitted == true" class="error"
+              >First name is required</span
+            >
           </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-              required
-            />
-            <label for="floatingInput">Last Name</label>
+          <div
+            class="form-floating mb-3"
+            [ngClass]="{
+              'has-error': !last_name.valid && isSubmitted == true
+            }"
+          >
+            <div class="mb-2">
+              <label for="lastname"
+                >Last Name<span class="requiredField">*</span></label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                id="first_name"
+                required
+                minlength="2"
+                autocomplete="off"
+                [(ngModel)]="LastName"
+                name="first_name"
+                #last_name="ngModel"
+              />
+              <span
+                *ngIf="!last_name.valid && isSubmitted == true"
+                class="error"
+                >Last name is required</span
+              >
+            </div>
           </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-              required
-            />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="password"
-              class="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-              required
-            />
-            <label for="floatingPassword">Password</label>
-          </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me" /> Remember me
-            </label>
+          <div
+            class="form-floating mb-3"
+            [ngClass]="{
+              'has-error': !email.valid && isSubmitted == true
+            }"
+          >
+            <div class="mb-2">
+              <label for="email"
+                >Email address<span class="requiredField">*</span></label
+              >
+            </div>
+            <div>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                required
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                [(ngModel)]="Email"
+                name="email"
+                autocomplete="off"
+                #email="ngModel"
+              />
+              <span
+                *ngIf="!email.valid && isSubmitted==true && !email.errors?.['pattern']"
+                class="error"
+                >Email is required</span
+              >
+              <span
+                *ngIf="!email.valid && isSubmitted==true && !email.errors?.['required']"
+                class="error"
+                >Email is invalid</span
+              >
+            </div>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">
             Let's talk
@@ -86,7 +138,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Email Us</h5>
-            <a class="card-text"> support@gmail.com </a>
+            <a class="card-text"> info@saya.life</a>
           </div>
         </div>
       </div>
@@ -94,15 +146,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Visit Us</h5>
-            <p class="card-text">19115 68th Ave S H108 Kent, WA 98032</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Schedule a Call</h5>
-            <a class="card-text"> Click here </a>
+            <p class="card-text">525 S Hewitt Street, Los Angeles 90013, USA</p>
           </div>
         </div>
       </div>

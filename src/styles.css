@@ -13,3 +13,13 @@ body {
   width: auto !important;
   overflow-x: hidden !important;
 }
+
+.requiredField {
+  color: #ef0b0bd6;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 3px;
+}
+.has-error {
+  color: #a94442;
+}
