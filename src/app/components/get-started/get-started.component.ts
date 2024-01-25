@@ -31,7 +31,6 @@ export class GetStartedComponent {
       email: registerForm.value.email,
       message: registerForm.value.message,
     };
-    console.log(MainPage);
     this.websiteService.UpdateMenuBarContactUsData(MainPage).subscribe(
       (response: any) => {
         var result = this._dycrypt.decrypt(response);
