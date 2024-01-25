@@ -23,12 +23,7 @@ export class HeaderComponent {
     const getStartedLink =
       this.el.nativeElement.querySelector('#getLinkElement');
     if (isMobile) {
-      this.renderer.setAttribute(
-        storeLink,
-        'data-bs-target',
-        '#navbarSupportedContent'
-      );
-      this.renderer.setAttribute(storeLink, 'data-bs-toggle', 'collapse');
+      this.renderer.setAttribute(storeLink, 'href', 'https://saya.life/shop');
       this.renderer.setAttribute(
         aboutLink,
         'data-bs-target',

@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { WebsiteService } from './services/website.service';
+import { CryptographicService } from './services/cryptographic.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,12 +36,15 @@ import { GetStartedComponent } from './components/get-started/get-started.compon
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CountUpModule,
     NgbDropdownModule,
     FormsModule,
+    HttpClientModule,
+    ToastrModule.forRoot(),
   ],
-  providers: [],
+  providers: [WebsiteService, CryptographicService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -9,7 +9,7 @@
         <p class="col-lg-10 fs-4">Earn Commission on Project Sale</p>
         <p class="col-lg-10 fs-4">Get Marketing, Sales & Technical Support</p>
       </div>
-      <div class="col-md-10 mx-auto col-lg-5">
+      <div class="col-md-10 mx-auto col-lg-5 g-lg-5 py-5 py-xs-1">
         <form
           class="p-4 p-md-5 border rounded-3 shadow"
           (ngSubmit)="onSubmit(registerForm)"
@@ -23,7 +23,7 @@
           >
             <div class="mb-2">
               <label for="firstname"
-                >FirstName<span class="requiredField">*</span></label
+                >Name<span class="requiredField">*</span></label
               >
             </div>
             <div>
@@ -37,43 +37,13 @@
                 minlength="2"
                 autocomplete="off"
                 [(ngModel)]="FirstName"
-                name="first_name"
+                name="name"
                 #first_name="ngModel"
               />
             </div>
             <span *ngIf="!first_name.valid && isSubmitted == true" class="error"
-              >First name is required</span
+              >Name is required</span
             >
-          </div>
-          <div
-            class="form-floating mb-3"
-            [ngClass]="{
-              'has-error': !last_name.valid && isSubmitted == true
-            }"
-          >
-            <div class="mb-2">
-              <label for="lastname"
-                >Last Name<span class="requiredField">*</span></label
-              >
-            </div>
-            <div>
-              <input
-                type="text"
-                class="form-control"
-                id="first_name"
-                required
-                minlength="2"
-                autocomplete="off"
-                [(ngModel)]="LastName"
-                name="first_name"
-                #last_name="ngModel"
-              />
-              <span
-                *ngIf="!last_name.valid && isSubmitted == true"
-                class="error"
-                >Last name is required</span
-              >
-            </div>
           </div>
           <div
             class="form-floating mb-3"
@@ -107,6 +77,35 @@
                 *ngIf="!email.valid && isSubmitted==true && !email.errors?.['required']"
                 class="error"
                 >Email is invalid</span
+              >
+            </div>
+          </div>
+          <div
+            class="form-floating mb-3"
+            [ngClass]="{
+              'has-error': !message.valid && isSubmitted == true
+            }"
+          >
+            <div class="mb-2">
+              <label for="message"
+                >Message<span class="requiredField">*</span></label
+              >
+            </div>
+            <div>
+              <textarea
+                class="form-control"
+                id="message"
+                required
+                minlength="2"
+                autocomplete="off"
+                [(ngModel)]="Message"
+                name="message"
+                #message="ngModel"
+                rows="5"
+              >
+              </textarea>
+              <span *ngIf="!message.valid && isSubmitted == true" class="error"
+                >Message is required</span
               >
             </div>
           </div>
