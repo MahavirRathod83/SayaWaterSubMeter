@@ -10,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class GetStartedComponent {
   FirstName: string = '';
+  CompanyName: string = '';
   Message: string = '';
   Email: string = '';
   isSubmitted: boolean = false;
@@ -27,6 +28,7 @@ export class GetStartedComponent {
       return;
     }
     const MainPage = {
+      companyName: registerForm.value.companyname,
       name: registerForm.value.name,
       email: registerForm.value.email,
       message: registerForm.value.message,
