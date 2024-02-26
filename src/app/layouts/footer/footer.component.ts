@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { routes } from 'src/app/shared/routes/routes';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent {
+  public routes = routes;
   date: number = new Date().getFullYear();
 }

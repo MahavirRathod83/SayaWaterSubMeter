@@ -10,103 +10,95 @@
         <p class="col-lg-10 fs-4">Get Marketing, Sales & Technical Support</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5 g-lg-5 py-5 py-xs-1">
-        <form
-          class="p-4 p-md-5 border rounded-3 shadow"
-          (ngSubmit)="onSubmit(registerForm)"
-          #registerForm="ngForm"
-        >
-          <div
-            class="form-floating mb-3"
-            [ngClass]="{
-              'has-error': !first_name.valid && isSubmitted == true
-            }"
-          >
+        <form class="p-4 p-md-5 border rounded-3 shadow"
+              (ngSubmit)="onSubmit(registerForm)"
+              #registerForm="ngForm">
+          <div class="form-floating mb-3"
+               [ngClass]="{
+              'has-error': !first_name.valid && isSubmitted
+            }">
             <div class="mb-2">
-              <label for="firstname"
-                >Name<span class="requiredField">*</span></label
-              >
+              <label for="firstname">Name<span class="requiredField">*</span></label>
             </div>
             <div>
-              <input
-                type="text"
-                class="form-control"
-                id="floatingInput"
-                required
-                id="first_name"
-                required
-                minlength="2"
-                autocomplete="off"
-                [(ngModel)]="FirstName"
-                name="name"
-                #first_name="ngModel"
-              />
+              <input type="text"
+                     class="form-control"
+                     id="floatingInput"
+                     required
+                     id="first_name"
+                     required
+                     minlength="2"
+                     autocomplete="off"
+                     [(ngModel)]="FirstName"
+                     name="name"
+                     #first_name="ngModel" />
             </div>
-            <span *ngIf="!first_name.valid && isSubmitted == true" class="error"
-              >Name is required</span
-            >
+            <span *ngIf="!first_name.valid && isSubmitted" class="error">Your Name is required</span>
           </div>
-          <div
-            class="form-floating mb-3"
-            [ngClass]="{
-              'has-error': !email.valid && isSubmitted == true
-            }"
-          >
+          <div class="form-floating mb-3"
+               [ngClass]="{
+              'has-error': !company_name.valid && isSubmitted
+            }">
             <div class="mb-2">
-              <label for="email"
-                >Email address<span class="requiredField">*</span></label
-              >
+              <label for="companyname">Company Name<span class="requiredField">*</span></label>
             </div>
             <div>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                required
-                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
-                [(ngModel)]="Email"
-                name="email"
-                autocomplete="off"
-                #email="ngModel"
-              />
-              <span
-                *ngIf="!email.valid && isSubmitted==true && !email.errors?.['pattern']"
-                class="error"
-                >Email is required</span
-              >
-              <span
-                *ngIf="!email.valid && isSubmitted==true && !email.errors?.['required']"
-                class="error"
-                >Email is invalid</span
-              >
+              <input type="text"
+                     class="form-control"
+                     id="floatingInput"
+                     required
+                     id="company_name"
+                     required
+                     minlength="2"
+                     autocomplete="off"
+                     [(ngModel)]="CompanyName"
+                     name="name"
+                     #company_name="ngModel" />
+            </div>
+            <span *ngIf="!company_name.valid && isSubmitted" class="error">Company Name is required</span>
+          </div>
+          <div class="form-floating mb-3"
+               [ngClass]="{
+              'has-error': !email.valid && isSubmitted
+            }">
+            <div class="mb-2">
+              <label for="email">Company Email address<span class="requiredField">*</span></label>
+            </div>
+            <div>
+              <input type="text"
+                     class="form-control"
+                     id="email"
+                     required
+                     pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                     [(ngModel)]="Email"
+                     name="email"
+                     autocomplete="off"
+                     #email="ngModel" />
+              <span *ngIf="!email.valid && isSubmitted && !email.errors?.['pattern']"
+                    class="error">Email is required</span>
+              <span *ngIf="!email.valid && isSubmitted && !email.errors?.['required']"
+                    class="error">Email is invalid</span>
             </div>
           </div>
-          <div
-            class="form-floating mb-3"
-            [ngClass]="{
-              'has-error': !message.valid && isSubmitted == true
-            }"
-          >
+          <div class="form-floating mb-3"
+               [ngClass]="{
+              'has-error': !message.valid && isSubmitted
+            }">
             <div class="mb-2">
-              <label for="message"
-                >Message<span class="requiredField">*</span></label
-              >
+              <label for="message">Description<span class="requiredField">*</span></label>
             </div>
             <div>
-              <textarea
-                class="form-control"
-                id="message"
-                required
-                minlength="2"
-                autocomplete="off"
-                [(ngModel)]="Message"
-                name="message"
-                #message="ngModel"
-                rows="5"
-              >
+              <textarea class="form-control"
+                        id="message"
+                        required
+                        minlength="2"
+                        autocomplete="off"
+                        [(ngModel)]="Message"
+                        name="message"
+                        #message="ngModel"
+                        rows="5">
               </textarea>
-              <span *ngIf="!message.valid && isSubmitted == true" class="error"
-                >Message is required</span
-              >
+              <span *ngIf="!message.valid && isSubmitted" class="error">Description is required</span>
             </div>
           </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">
@@ -125,15 +117,7 @@
       <h1 class="fw-bold heading">Need immediate assistance? We’re here.</h1>
     </div>
     <div class="row p-4">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Call Us</h5>
-            <a class="card-text"> (426) 228-6831 </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-6 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Email Us</h5>
@@ -141,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-6 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Visit Us</h5>
